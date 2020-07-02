@@ -13,14 +13,19 @@
   --accent-color: #2196f3;
   --accent-secondary-color: #000000;
   --primary-white-color: #ffffff;
+  --secondary-white-color: #f5f4fa;
   --fotter-bcg-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Боди */
 
 body {
   background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* убирает точки и подчеркивания в списках */
@@ -32,6 +37,13 @@ a {
 }
 
 /* оформление логотипа Web Studio */
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
 .logo-web {
   color: var(--accent-color);
@@ -49,6 +61,12 @@ a {
 
 /* оформление навигации студия, портфолио, навигация */
 
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .nav-list {
   color: var(--title-text-color);
 }
@@ -58,8 +76,14 @@ a {
 }
 
 /* оформление стилей адреса */
-
+address {
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
 .address-list {
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 .address-list:hover,
@@ -75,9 +99,70 @@ a {
 }
 /* Все заголовки 2 и 3 уровня будут одного цвета */
 
-h2,
-h3 {
+h2 {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* секция герой HERO */
+
+.hero {
+  background-color: gray;
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+/* Оформлнение абзацев текста в секции наши особенности  */
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.section-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Оформление секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.work {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.work-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+}
+
+/* оформление секции НАША КОМАНДА */
+
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--title-text-color);
+}
+
+.team-tittle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 /* оформление футера */
@@ -99,6 +184,28 @@ h3 {
 .sign-up {
   color: var(--primary-white-color);
 }
+.address-info:hover,
+.address-info:focus {
+  color: var(--accent-color);
+}
+.address-map:hover,
+.address-map:focus {
+  color: var(--accent-color);
+}
+
+/* оформление кнопки главной страницы */
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+}
 
 /* оформление кнопок портфолио */
 
@@ -114,6 +221,29 @@ h3 {
 
 .button-portfolio:focus,
 .button-portfolio:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* оформление секции проекты страницы ПОРТФОЛИО */
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.projects-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+.projects-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
