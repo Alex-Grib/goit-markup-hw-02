@@ -28,11 +28,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* убирает точки и подчеркивания в списках */
-ul {
+/* убирает точки и подчеркивания в списках и ссылках*/
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
 }
 
@@ -61,17 +61,17 @@ a {
 
 /* оформление навигации студия, портфолио, навигация */
 
-.nav {
+.nav-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.nav-list {
+.nav-item {
   color: var(--title-text-color);
 }
-.nav-list:hover,
-.nav-list:focus {
+.nav-item:hover,
+.nav-item:focus {
   color: var(--accent-color);
 }
 
@@ -97,72 +97,75 @@ address {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-/* Все заголовки 2 и 3 уровня будут одного цвета */
-
-h2 {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
 
 /* секция герой HERO */
-
-.hero {
-  background-color: gray;
+.hero-tittle {
   color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
 
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Оформлнение абзацев текста в секции наши особенности  */
 
-.text {
+.services-tittle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.services-text {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
 }
-
-.section-tittle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
 /* Оформление секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
-.work {
+.work-tittle {
+  color: var(--title-text-color);
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
 }
 
-.work-tittle {
+.work-tittle-text {
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--primary-white-color);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* оформление секции НАША КОМАНДА */
 
+.section-team {
+  background-color: var(--secondary-white-color);
+}
+
 .team {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
-  color: var(--title-text-color);
+  line-height: 1.19;
 }
 
 .team-tittle {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
 }
 
 /* оформление футера */
@@ -190,6 +193,16 @@ h2 {
 }
 .address-map:hover,
 .address-map:focus {
+  color: var(--accent-color);
+}
+
+/*  Оформление социальных сетей */
+
+.logo-social {
+  color: var(--title-text-color);
+}
+.logo-social:hover,
+.logo-social:focus {
   color: var(--accent-color);
 }
 
@@ -228,22 +241,25 @@ h2 {
 /* оформление секции проекты страницы ПОРТФОЛИО */
 
 .projects-title {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .projects-list {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
 }
 
 .projects-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
 }

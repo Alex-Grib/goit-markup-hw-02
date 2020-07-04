@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб Студия</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -13,15 +13,17 @@
   <body>
     <!-- Шапка сайта -->
     <header>
-      <nav class="header">
-        <a href="index.html" class="logo"
+      <nav class="navigation">
+        <a href="index.html" class="logo link"
           ><span class="logo-web">Web</span>
           <span class="logo-studio">Studio</span>
         </a>
-        <ul class="nav">
-          <li><a href="./index.html" class="nav-list">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-list">Портфолио</a></li>
-          <li><a href="#" class="nav-list">Контакты</a></li>
+        <ul class="nav-list list">
+          <li><a href="./index.html" class="nav-item link">Студия</a></li>
+          <li>
+            <a href="./portfolio.html" class="nav-item link">Портфолио</a>
+          </li>
+          <li><a href="#" class="nav-item link">Контакты</a></li>
         </ul>
       </nav>
       <address class="address">
@@ -34,9 +36,9 @@
     <!-- Мейн -->
     <main>
       <!-- наши услуги -->
-      <section>
+      <section class="btn-projects">
         <h1 hidden>Наши проекты</h1>
-        <ul>
+        <ul class="list">
           <li><button class="button-portfolio" type="button">Все</button></li>
           <li>
             <button class="button-portfolio" type="button">Веб-сайты</button>
@@ -54,9 +56,9 @@
       </section>
       <!-- Проекты -->
       <section class="projects">
-        <ul>
+        <ul class="list">
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects1.jpg"
                 alt="Технокряк"
@@ -73,7 +75,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects2.jpg"
                 alt="Баскетболисты"
@@ -90,7 +92,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects3.jpg"
                 alt="Ресторан"
@@ -107,7 +109,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects4.jpg"
                 alt="Проект прайм"
@@ -124,10 +126,10 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects5.jpg"
-                alt="Проект Boxes"
+                alt="Проект Коробки"
                 width="370"
                 height="294"
               />
@@ -141,7 +143,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects6.jpg"
                 alt="вдохновение без границ"
@@ -158,7 +160,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects7.jpg"
                 alt="Лимитированное издание"
@@ -175,7 +177,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects8.jpg"
                 alt="проект лаб"
@@ -192,7 +194,7 @@
             >
           </li>
           <li>
-            <a href="#"
+            <a class="link" href="#"
               ><img
                 src="./images/projects/projects9.jpg"
                 alt="рост бизнеса"
@@ -214,7 +216,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="logotype">
-        <a href="index.html" class="logo"
+        <a href="index.html" class="logo link"
           ><span class="logo-web">Web</span>
           <span class="logo-footer">Studio</span>
         </a>
@@ -222,21 +224,23 @@
           <a
             href="https://goo.gl/maps/Aek9VfqJxaWBVfHE9"
             target="_blank"
-            class="address-map"
+            class="address-map link"
             >ул. Васильковая, 7А Киев, 08132</a
           >
           <br />
-          <a href="mailto:info@example.com" class="address-info"
+          <a href="mailto:info@example.com" class="address-info link"
             >info@example.com</a
           ><br />
-          <a href="tel:+380991111111" class="address-info">+38 099 111 11 11</a>
+          <a href="tel:+380991111111" class="address-info link"
+            >+38 099 111 11 11</a
+          >
         </address>
       </div>
       <div>
         <b class="sign-up">присоединяйтесь</b>
-        <ul>
+        <ul class="list">
           <li>
-            <a href="#" aria-label="Instagram"
+            <a href="#" aria-label="Instagram" class="logo-social link"
               >Инстаграмм
               <img
                 src="./images/logo-networks/logo-instagram.svg"
@@ -246,7 +250,7 @@
           </li>
 
           <li>
-            <a href="#" aria-label="twitter"
+            <a href="#" aria-label="twitter" class="logo-social link"
               >Твиттер
               <img
                 src="./images/logo-networks/logo-twitter.svg"
@@ -255,7 +259,7 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="facebook"
+            <a href="#" aria-label="facebook" class="logo-social link"
               >Фейсбук
               <img
                 src="./images/logo-networks/logo-facebook.svg"
@@ -264,7 +268,7 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="linkedin"
+            <a href="#" aria-label="linkedin" class="logo-social link"
               >Линкедин
               <img
                 src="./images/logo-networks/logo-linkedin.svg"

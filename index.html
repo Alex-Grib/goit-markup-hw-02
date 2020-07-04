@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб Студия</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -13,15 +13,17 @@
   <body>
     <!-- Шапка сайта -->
     <header>
-      <nav class="header">
-        <a href="index.html" class="logo"
+      <nav class="navigation">
+        <a href="index.html" class="logo link"
           ><span class="logo-web">Web</span>
           <span class="logo-studio">Studio</span>
         </a>
-        <ul class="nav">
-          <li><a href="./index.html" class="nav-list">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-list">Портфолио</a></li>
-          <li><a href="#" class="nav-list">Контакты</a></li>
+        <ul class="nav-list list">
+          <li><a href="./index.html" class="nav-item link">Студия</a></li>
+          <li>
+            <a href="./portfolio.html" class="nav-item link">Портфолио</a>
+          </li>
+          <li><a href="#" class="nav-item link">Контакты</a></li>
         </ul>
       </nav>
       <address class="address">
@@ -34,41 +36,41 @@
     <main>
       <!-- Секция Герой -->
       <section class="hero">
-        <h1>Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
         <button class="button">Заказать услугу</button>
       </section>
       <!-- Наши особенности -->
-      <section>
+      <section class="services">
         <h2 hidden>Наши особенности</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/img-svg/antenna1.svg" alt="антена" />
-            <h3 class="section-tittle">Внимание к деталям</h3>
-            <p class="text">
+            <h3 class="services-tittle">Внимание к деталям</h3>
+            <p class="services-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <img src="./images/img-svg/clock1.svg" alt="часы" />
-            <h3 class="section-tittle">Пунктуальность</h3>
-            <p class="text">
+            <h3 class="services-tittle">Пунктуальность</h3>
+            <p class="services-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
             <img src="./images/img-svg/diagram1.svg" alt="диаграмма" />
-            <h3 class="section-tittle">Планирование</h3>
-            <p class="text">
+            <h3 class="services-tittle">Планирование</h3>
+            <p class="services-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <img src="./images/img-svg/astronaut1.svg" alt="астронавт" />
-            <h3 class="section-tittle">Современные технологии</h3>
-            <p class="text">
+            <h3 class="services-tittle">Современные технологии</h3>
+            <p class="services-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -77,8 +79,8 @@
       </section>
       <!-- Специализация студии -->
       <section>
-        <h2 class="work">Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="work-tittle">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/what-are-we-doing/macbook-img.jpg"
@@ -86,7 +88,7 @@
               width="370"
               height="294"
             />
-            <h3 class="work-tittle">Десктопные приложения</h3>
+            <h3 class="work-tittle-text">Десктопные приложения</h3>
           </li>
           <li>
             <img
@@ -95,7 +97,7 @@
               width="370"
               height="294"
             />
-            <h3 class="work-tittle">Мобильные приложения</h3>
+            <h3 class="work-tittle-text">Мобильные приложения</h3>
           </li>
           <li>
             <img
@@ -104,14 +106,14 @@
               width="370"
               height="294"
             />
-            <h3 class="work-tittle">Дизайнерские решения</h3>
+            <h3 class="work-tittle-text">Дизайнерские решения</h3>
           </li>
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
-        <h2 class="work">Наша команда</h2>
-        <ul>
+      <section class="section-team">
+        <h2 class="work-tittle">Наша команда</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/team/img1.jpg"
@@ -121,9 +123,9 @@
             />
             <h3 class="team">Николай Кучеренко</h3>
             <p class="team-tittle">Product Designer</p>
-            <ul>
+            <ul class="list">
               <li>
-                <a href="#" aria-label="instagram"
+                <a href="#" aria-label="instagram" class="logo-social link"
                   >Инстаграмм
                   <img
                     src="./images/logo-networks/logo-instagram.svg"
@@ -132,7 +134,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="twitter"
+                <a href="#" aria-label="twitter" class="logo-social link"
                   >Твиттер<img
                     src="./images/logo-networks/logo-twitter.svg"
                     alt="Твиттер"
@@ -140,7 +142,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="facebook"
+                <a href="#" aria-label="facebook" class="logo-social link"
                   >Фейсбук<img
                     src="./images/logo-networks/logo-facebook.svg"
                     alt="Фейсбук"
@@ -148,7 +150,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="linkedin"
+                <a href="#" aria-label="linkedin" class="logo-social link"
                   >Линкедин
                   <img
                     src="./images/logo-networks/logo-linkedin.svg"
@@ -167,9 +169,9 @@
             />
             <h3 class="team">Ольга Иванова</h3>
             <p class="team-tittle">Frontend Developer</p>
-            <ul>
+            <ul class="list">
               <li>
-                <a href="#" aria-label="Instagram"
+                <a href="#" aria-label="Instagram" class="logo-social link"
                   >Инстаграмм
                   <img
                     src="./images/logo-networks/logo-instagram.svg"
@@ -178,7 +180,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="twitter"
+                <a href="#" aria-label="twitter" class="logo-social link"
                   >Твиттер<img
                     src="./images/logo-networks/logo-twitter.svg"
                     alt="Твиттер"
@@ -186,7 +188,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="facebook"
+                <a href="#" aria-label="facebook" class="logo-social link"
                   >Фейсбук<img
                     src="./images/logo-networks/logo-facebook.svg"
                     alt="Фейсбук"
@@ -194,7 +196,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="linkedin"
+                <a href="#" aria-label="linkedin" class="logo-social link"
                   >Линкедин
                   <img
                     src="./images/logo-networks/logo-linkedin.svg"
@@ -213,9 +215,9 @@
             />
             <h3 class="team">Андрей Шевченко</h3>
             <p class="team-tittle">Marketing</p>
-            <ul>
+            <ul class="list">
               <li>
-                <a href="#" aria-label="Instagram"
+                <a href="#" aria-label="Instagram" class="logo-social link"
                   >Инстаграмм
                   <img
                     src="./images/logo-networks/logo-instagram.svg"
@@ -224,7 +226,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="twitter"
+                <a href="#" aria-label="twitter" class="logo-social link"
                   >Твиттер<img
                     src="./images/logo-networks/logo-twitter.svg"
                     alt="Твиттер"
@@ -232,7 +234,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="facebook"
+                <a href="#" aria-label="facebook" class="logo-social link"
                   >Фейсбук<img
                     src="./images/logo-networks/logo-facebook.svg"
                     alt="Фейсбук"
@@ -240,7 +242,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="linkedin"
+                <a href="#" aria-label="linkedin" class="logo-social link"
                   >Линкедин
                   <img
                     src="./images/logo-networks/logo-linkedin.svg"
@@ -259,9 +261,9 @@
             />
             <h3 class="team">Иван Николаев</h3>
             <p class="team-tittle">UI Designer</p>
-            <ul>
+            <ul class="list">
               <li>
-                <a href="#" aria-label="Instagram"
+                <a href="#" aria-label="Instagram" class="logo-social link"
                   >Инстаграмм
                   <img
                     src="./images/logo-networks/logo-instagram.svg"
@@ -270,7 +272,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="twitter"
+                <a href="#" aria-label="twitter" class="logo-social link"
                   >Твиттер<img
                     src="./images/logo-networks/logo-twitter.svg"
                     alt="Твиттер"
@@ -278,7 +280,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="facebook"
+                <a href="#" aria-label="facebook" class="logo-social link"
                   >Фейсбук<img
                     src="./images/logo-networks/logo-facebook.svg"
                     alt="Фейсбук"
@@ -286,7 +288,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="linkedin"
+                <a href="#" aria-label="linkedin" class="logo-social link"
                   >Линкедин
                   <img
                     src="./images/logo-networks/logo-linkedin.svg"
@@ -300,45 +302,45 @@
       </section>
       <!-- Наши Клиенты -->
       <section>
-        <h2 class="work">Постоянные клиенты</h2>
-        <ul lang="en">
+        <h2 class="work-tittle">Постоянные клиенты</h2>
+        <ul class="list" lang="en">
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Ya & Co
               <img src="./images/our-clients/logo1.svg" alt="logo1" />
             </a>
           </li>
 
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Company Tagline Here
               <img src="./images/our-clients/logo2.svg" alt="logo2" />
             </a>
           </li>
 
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Company
               <img src="./images/our-clients/logo3.svg" alt="logo3" />
             </a>
           </li>
 
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Foster Petters
               <img src="./images/our-clients/logo4.svg" alt="logo4" />
             </a>
           </li>
 
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Brand
               <img src="./images/our-clients/logo5.svg" alt="logo5" />
             </a>
           </li>
 
           <li>
-            <a href="#"
+            <a href="#" class="logo-social link"
               >Company Tag Line
               <img src="./images/our-clients/logo6.svg" alt="logo6" />
             </a>
@@ -348,7 +350,7 @@
     </main>
     <footer class="footer">
       <div class="logotype">
-        <a href="index.html" class="logo"
+        <a href="index.html" class="logo link"
           ><span class="logo-web">Web</span>
           <span class="logo-footer">Studio</span>
         </a>
@@ -356,21 +358,23 @@
           <a
             href="https://goo.gl/maps/Aek9VfqJxaWBVfHE9"
             target="_blank"
-            class="address-map"
+            class="address-map link"
             >ул. Васильковая, 7А Киев, 08132</a
           >
           <br />
-          <a href="mailto:info@example.com" class="address-info"
+          <a href="mailto:info@example.com" class="address-info link"
             >info@example.com</a
           ><br />
-          <a href="tel:+380991111111" class="address-info">+38 099 111 11 11</a>
+          <a href="tel:+380991111111" class="address-info link"
+            >+38 099 111 11 11</a
+          >
         </address>
       </div>
       <div>
         <b class="sign-up">присоединяйтесь</b>
-        <ul>
+        <ul class="list">
           <li>
-            <a href="#" aria-label="Instagram"
+            <a href="#" aria-label="Instagram" class="logo-social link"
               >Инстаграмм
               <img
                 src="./images/logo-networks/logo-instagram.svg"
@@ -380,7 +384,7 @@
           </li>
 
           <li>
-            <a href="#" aria-label="twitter"
+            <a href="#" aria-label="twitter" class="logo-social link"
               >Твиттер
               <img
                 src="./images/logo-networks/logo-twitter.svg"
@@ -389,7 +393,7 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="facebook"
+            <a href="#" aria-label="facebook" class="logo-social link"
               >Фейсбук
               <img
                 src="./images/logo-networks/logo-facebook.svg"
@@ -398,7 +402,7 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="linkedin"
+            <a href="#" aria-label="linkedin" class="logo-social link"
               >Линкедин
               <img
                 src="./images/logo-networks/logo-linkedin.svg"
