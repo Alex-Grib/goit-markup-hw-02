@@ -178,14 +178,25 @@ address {
 
 .address-map {
   color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .address-info {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .sign-up {
   color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .address-info:hover,
 .address-info:focus {
@@ -223,10 +234,11 @@ address {
 /* оформление кнопок портфолио */
 
 .button-portfolio {
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
   border-radius: 4px;
   background-color: #f5f4fa;
   color: var(--title-text-color);
